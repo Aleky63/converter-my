@@ -50,15 +50,31 @@ input {
   background: var(--control-bg);
   color: var(--text);
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+select,
+button {
   cursor: pointer;
+}
+
+input {
+  cursor: text;
 }
 
 html.dark select,
 html.dark button,
 html.dark input {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .rates-list {
