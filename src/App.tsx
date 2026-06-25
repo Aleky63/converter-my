@@ -53,8 +53,8 @@ export default function App() {
       <Background dark={dark} />
 
       <Routes>
-        <Route path="/" element={<Converter />} />
-        <Route path="/rates" element={<Rates />} />
+        <Route path="/" element={<Rates />} />
+        <Route path="/converter" element={<Converter />} />
       </Routes>
     </>
   );
