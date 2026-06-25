@@ -24,7 +24,7 @@ function Background({ dark }: { dark: boolean }) {
         backgroundRepeat: "no-repeat",
         opacity: 0.35,
         pointerEvents: "none",
-        zIndex: 0,
+        zIndex: 1,
       }}
     />
   );
@@ -53,8 +53,8 @@ export default function App() {
       <Background dark={dark} />
 
       <Routes>
-        <Route path="/" element={<Rates />} />
-        <Route path="/converter" element={<Converter />} />
+        <Route path="/" element={<Converter />} />
+        <Route path="/rates" element={<Rates />} />
       </Routes>
     </>
   );
