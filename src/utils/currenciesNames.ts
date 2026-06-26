@@ -4,7 +4,6 @@ export const currencyNames: Record<string, string> = {
   RUB: "Российский рубль",
   TRY: "Турецкая лира",
   GEL: "Грузинский лари",
-
   KZT: "Казахстанский тенге",
   AMD: "Армянский драм",
   GBP: "Фунт стерлингов",
