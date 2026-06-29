@@ -93,7 +93,7 @@ export default function Header({ dark, setDark }: Props) {
         {/* Навигация */}
         <nav style={{ display: "flex", gap: 15 }}>
           <Link
-            to="/"
+            to="/converter"
             style={{
               color: dark ? "#f3f4f6" : "#333",
               textDecoration: "none",
