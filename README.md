@@ -72,6 +72,37 @@ export default defineConfig([
 ]);
 ```
 
-<!-- https://converter-my.vercel.app/ -->
+## Deploy
+
+### Vercel
+
+1. Install Vercel CLI (optional): `npm i -g vercel`
+2. Run: `vercel`
+3. When asked, use the default settings and set the root directory to the project root.
+
+This repository includes `vercel.json` for static build output.
+
+### Netlify
+
+1. Create a new site in Netlify.
+2. Set the build command to `npm run build`.
+3. Set the publish directory to `dist`.
+4. Add a redirect rule:
+
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+This repository includes `netlify.toml` for Netlify deploy settings.
+
+### Local run
+
+```bash
+npm install
+npm run dev
+```
 
 <!-- npm run dev -->
