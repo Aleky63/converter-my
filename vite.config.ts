@@ -9,14 +9,16 @@ export default defineConfig({
       name: "spa-fallback",
       configureServer(server) {
         return () => {
-          server.middlewares.use((req, res, next) => {
+          server.middlewares.use((req, _res, next) => {
+            const url = req.url || "";
+
             // Если это запрос на файл, пропускаем
-            if (req.url.match(/\.\w+$/)) {
+            if (url.match(/\.\w+$/)) {
               next();
               return;
             }
             // Если это запрос на API, пропускаем
-            if (req.url.startsWith("/api")) {
+            if (url.startsWith("/api")) {
               next();
               return;
             }
