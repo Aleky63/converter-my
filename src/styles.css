@@ -7,11 +7,11 @@
 }
 
 html.dark {
-  --bg: #111827;
+  --bg: #1b263f;
   --text: #ffffff;
   --card-bg: #1f2938;
   --item-bg: #2c2c2c;
-  --control-bg: #7e8b9e;
+  --control-bg: #8691a1;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 .card {
   background: var(--card-bg);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   max-width: 700px;
   margin: 0 auto;
 }
