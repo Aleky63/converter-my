@@ -74,4 +74,6 @@ export default defineConfig([
 
 <!-- https://converter-my.vercel.app/ -->
 
+<!--  npm install react-dom react-router-dom -->
+
 <!-- npm run dev -->
