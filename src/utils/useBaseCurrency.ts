@@ -4,7 +4,7 @@ export function useBaseCurrency() {
   // Всегда начинаем с USD
   const [base, setBase] = useState<string>("USD");
 
-  // При загрузке компонента, очищаем старое значение JPY если оно там есть
+  // При загрузке компонента, очищаем старое значение BYN если оно там есть
   useEffect(() => {
     // Устанавливаем USD как начальное значение
     localStorage.setItem("base", "USD");
@@ -26,8 +26,8 @@ export const currencies = [
   "GEL",
   "KZT",
   "AMD",
-  "GBP",
-  "JPY",
+  "BYN",
   "CNY",
   "AED",
+  "GBP",
 ];

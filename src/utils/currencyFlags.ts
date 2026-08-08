@@ -6,8 +6,8 @@ export const currencyToCountry: Record<string, string> = {
   GEL: "ge",
   KZT: "kz",
   AMD: "am",
-  GBP: "gb",
-  JPY: "jp",
+  BYN: "by",
   CNY: "cn",
   AED: "ae",
+  GBP: "gb",
 };

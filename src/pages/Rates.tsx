@@ -19,6 +19,16 @@ export default function Rates() {
 
   const storageKey = `rates_${base}`;
 
+  const normalizeRates = (source?: Record<string, number | null> | Record<string, number>) => {
+    const normalized: Record<string, number | null> = {};
+
+    currencies.forEach((cur) => {
+      normalized[cur] = source?.[cur] ?? null;
+    });
+
+    return normalized;
+  };
+
   const fetchRates = useCallback(
     async (force = false) => {
       setLoading(true);
@@ -31,7 +41,7 @@ export default function Rates() {
           const isExpired = Date.now() - parsed.timestamp > SIX_HOURS;
 
           if (!isExpired) {
-            setRates(parsed.rates);
+            setRates(normalizeRates(parsed.rates));
             setUpdatedAt(new Date(parsed.timestamp).toLocaleString());
             setLoading(false);
             return;
@@ -46,13 +56,7 @@ export default function Rates() {
           return;
         }
 
-        const filtered: Record<string, number | null> = {};
-        currencies.forEach((cur) => {
-          // Some APIs may omit the base currency itself, or not include every
-          // currency in the list. We still want to show the selected currencies
-          // (e.g. CNY) even if the rate isn't present.
-          filtered[cur] = cur in data.rates ? data.rates[cur] : null;
-        });
+        const filtered = normalizeRates(data.rates);
 
         const now = Date.now();
 
