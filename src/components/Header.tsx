@@ -32,7 +32,7 @@ export default function Header({ dark, setDark }: Props) {
             height: 50,
             borderRadius: 10,
             objectFit: "cover",
-            boxShadow: "0 2px 8px rgba(79, 70, 229, 0.4)",
+            boxShadow: "0 2px 8px rgba(79, 70, 229, 0.3)",
             cursor: "pointer",
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
           }}
