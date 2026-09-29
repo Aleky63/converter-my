@@ -22,7 +22,7 @@ function Background({ dark }: { dark: boolean }) {
         backgroundSize: "contain",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        opacity: 0.3,
+        opacity: 0.25,
         pointerEvents: "none",
         zIndex: 1,
       }}
