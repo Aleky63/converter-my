@@ -1,17 +1,17 @@
 :root {
-  --bg: #ffffff;
+  --bg: #f5f8ff;
   --text: #111111;
-  --card-bg: #f5f5f5;
-  --item-bg: #ececec;
-  --control-bg: #e0e0e0;
+  --card-bg: #fbfcff;
+  --item-bg: #f0f4fa;
+  --control-bg: #e7edf6;
 }
 
 html.dark {
-  --bg: #293a5f;
+  --bg: #344b74;
   --text: #ffffff;
-  --card-bg: #4b6081;
-  --item-bg: #3b3a3a;
-  --control-bg: #7e8897;
+  --card-bg: #566e91;
+  --item-bg: #465978;
+  --control-bg: #8998ad;
 }
 
 body {
