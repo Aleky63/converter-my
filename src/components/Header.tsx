@@ -76,7 +76,7 @@ export default function Header({ dark, setDark }: Props) {
             e.currentTarget.style.textShadow = "none";
           }}
         >
-          Currency App
+          🧮Currency App
         </span>
       </div>
 
