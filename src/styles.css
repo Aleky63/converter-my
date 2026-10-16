@@ -7,11 +7,11 @@
 }
 
 html.dark {
-  --bg: #344b74;
+  --bg: #344b71;
   --text: #ffffff;
   --card-bg: #566e91;
   --item-bg: #546a8f;
-  --control-bg: #859ab8;
+  --control-bg: #859ab9;
 }
 
 body {
